@@ -1,23 +1,24 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "pixwell-dev/laravel-snowflake",
+    "description": "laravel-snowflake",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "pixwell-dev",
+        "laravel-snowflake"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/pixwell-dev/laravel-snowflake",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Daniel Janiga",
+            "email": "daniel.janiga@pixwell.sk",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "spatie/laravel-package-tools": "^1.1",
-        "illuminate/contracts": "^8.0"
+        "godruoyi/php-snowflake": "^1.0",
+        "illuminate/contracts": "^8.0",
+        "spatie/laravel-package-tools": "^1.1"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
@@ -27,13 +28,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "PixwellDev\\LaravelSnowflake\\": "src",
+            "PixwellDev\\LaravelSnowflake\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "PixwellDev\\LaravelSnowflake\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "PixwellDev\\LaravelSnowflake\\LaravelSnowflakeServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "LaravelSnowflake": "PixwellDev\\LaravelSnowflake\\LaravelSnowflakeFacade"
             }
         }
     },

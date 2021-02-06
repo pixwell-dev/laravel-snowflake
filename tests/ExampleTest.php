@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace PixwellDev\LaravelSnowflake\Tests;
 
 class ExampleTest extends TestCase
 {
