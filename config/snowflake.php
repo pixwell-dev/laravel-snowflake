@@ -30,4 +30,14 @@ return [
     'worker_id' => env('SNOWFLAKE_WORKER_ID', 1),
 
     'datacenter_id' => env('SNOWFLAKE_DATACENTER_ID', 1),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Snowflake Sequence Resolver
+    |--------------------------------------------------------------------------
+    |
+    | Available Settings: laravel-redis-cache, random
+    |
+    */
+    'resolver' => env('SNOWFLAKE_RESOLVER', 'laravel-redis-cache'),
 ];
